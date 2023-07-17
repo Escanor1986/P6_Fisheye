@@ -9,11 +9,18 @@ const MediaSchema = schema(
       required: [true, "Un identifiant utilisateur MongoDB est requis"],
     },
     title: { type: String, required: [true, "Un titre de photo est requis"] },
-    imageUrl: {
+    image: {
       type: String,
       required: [
         true,
-        "L'URL de l'image de la sauce téléchargée par l'utilisateur est requise",
+        "L'URL de l'image téléchargée par l'utilisateur est requise",
+      ],
+    },
+    video: {
+      type: String,
+      required: [
+        true,
+        "L'URL de l'image téléchargée par l'utilisateur est requise",
       ],
     },
     date: { type: Date, required: [true, "Une date est requise"] },
